@@ -1,0 +1,248 @@
+body {
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #222;
+}
+
+/* Header */
+header {
+  background: #f6eaea;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn, .playlist-button a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #d4b4b4;
+  color: #3c2b2b;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.btn:hover,
+.playlist-button a:hover {
+  background: #c29f9f;
+}
+header div {
+  font-weight: bold;
+  color: #6e2c2c;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  font-size: 2.3em;
+  margin: 20px 0;
+}
+h1 span {
+  color: #7B2D26;
+}
+
+/* Contenedor tipo tarjeta */
+.card {
+  background: #d9b1a3;
+  border-radius: 20px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Imagen principal */
+.main-img img {
+  width: 260px;
+  border-radius: 15px;
+}
+
+/* Grid imágenes pequeñas */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.grid img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Texto */
+.caption {
+  text-align: center;
+  margin-top: 12px;
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* Banner música */
+.music-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #d9b1a3;
+  color: #3e1d1d;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.music-banner::before {
+  content: "▶";
+  margin-right: 8px;
+}
+
+
+.playlist-card {
+  background: #f6ecec;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  max-width: 700px;
+  margin: auto;
+}
+.playlists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Imágenes decorativas */
+.decor {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none; /* no interfieren con clicks */
+}
+
+.decor-flor {
+  top: 85px;
+  left: 90px;
+  width: 120px;
+    transform: rotate(-10deg) scale(1.7);
+}
+
+.decor-estrella {
+  top: 110px;
+  right: 100px;
+  width: 97px;  
+    transform: rotate(15deg) scale(1.2);
+}
+
+.decor-espiral {
+  bottom: 40px;
+  left: 20px;
+  width: 80px;
+  transform: rotate(-15deg) scale(1.8);
+  opacity: 0.6;
+}
+
+.decor-exclamacion {
+  top: 60px;
+  right: 350px;
+  width: 100px;
+  transform: scale(1.8) rotate(25deg);
+}
+
+.decor-lily {
+  bottom: 105px;
+  right: 105px;
+  width: 250px;
+  transform: scale(1.9);
+  opacity: 0.7;
+}
+
+/* Cartas de texto */
+.side-card {
+  background: #e27164; /* rojo suave, puedes cambiarlo */
+  color: #311717;
+  padding: 15px;
+  border-radius: 12px;
+  width: 180px;
+  font-size: 10px;
+  line-height: 1.5em;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  font-style: italic;
+  opacity: 0.9;
+  margin-top: 20px;
+}
+.side-card p {
+  margin: 0;
+}
+
+/* Foto principal */
+.main-img img {
+  width: 260px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* 👈 sombra */
+}
+
+/* Fotos de la cuadrícula */
+.grid img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25); /* 👈 sombra */
+}
+
+/* Footer */
+footer {
+  background: #7B2D26; /* burdeos oscuro */
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Decoraciones playlist */
+.decor {
+  position: absolute;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.decor-red {
+  top: 145px;
+  left: 80px;
+  width: 120px;
+    transform: scale(1.5);
+}
+
+.decor-mono {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%) rotate(10deg) scale(1.6);
+  width: 100px;
+
+}
+
+.decor-estrellota {
+  top: 460px;
+  left: 40%;
+  transform: translateX(-50%);
+  width: 150px; /* 👈 la achiqué un poco */
+}
+
+.decor-rosas {
+  top: 315px;
+  right: 85px;
+  width: 120px;
+}
